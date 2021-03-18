@@ -1,0 +1,10 @@
+image: gcc
+
+build:
+  stage: build
+  script:
+    -  make -f make
+    - ./ConvertRomanLettersToInteger
+  artifacts:
+    paths:
+      - ConvertRomanLettersToInteger
